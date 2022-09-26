@@ -46,6 +46,7 @@ body {
 .list {
   list-style: none;
 }
+
 /* logo */
 .logo-header {
   font-family: "Raleway";
@@ -76,7 +77,6 @@ body {
 .header {
   background-color: #fff;
   border-bottom: 1px solid #ececec;
-  margin-bottom: 47px;
 }
 .logo-header {
   margin-right: 93px;
@@ -92,6 +92,7 @@ body {
   display: inline-block;
   display: flex;
 }
+
 .header-link-address:hover,
 .header-link-address:focus,
 .header-link:hover,
@@ -115,6 +116,8 @@ body {
 }
 
 .header-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   position: relative;
 
   color: var(--primary-text-color);
@@ -128,6 +131,10 @@ body {
   padding-bottom: 32px;
   display: block;
 }
+.curent {
+  color: var(--accent-color);
+}
+
 .header-link::after {
   content: "";
 
@@ -141,15 +148,15 @@ body {
   background: #2196f3;
   border-radius: 2px;
 
-  /* opacity: 0; */
   transform: scaleX(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover::after {
   transform: scaleX(1);
-  /* opacity: 1; */
 }
 .header-link-address {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   color: var(--secondary-text-color);
   font-size: 14px;
   font-weight: 500;
@@ -195,6 +202,8 @@ body {
   background-color: #188ce8;
 }
 .hero-btn {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -382,6 +391,8 @@ body {
   justify-content: center;
 }
 .team-social-link {
+  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -395,6 +406,7 @@ body {
 .team-social-link:focus {
   color: #fff;
   background-color: var(--accent-color);
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-list {
   width: 44px;
@@ -429,6 +441,8 @@ fill:  #FFFFFF;
   justify-content: space-between;
 }
 .clients-link {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   display: flex;
   width: 170px;
   height: 92px;
@@ -441,6 +455,8 @@ fill:  #FFFFFF;
   border-color: var(--accent-color);
 }
 .clients-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   padding: 16px 32px;
   width: 170px;
   height: 92px;
@@ -468,6 +484,8 @@ fill:  #FFFFFF;
   margin-top: 9px;
 }
 .address {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -476,6 +494,8 @@ fill:  #FFFFFF;
   text-decoration: none;
 }
 .footer-contact {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -519,6 +539,8 @@ fill:  #FFFFFF;
   margin-left: 70px;
 }
 .footer-social-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -548,6 +570,9 @@ fill:  #FFFFFF;
 .port-btn-list:not(:first-child) {
   margin-left: 8px;
 }
+.port-btn-list {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .port-btn-list:hover,
 .port-btn-list:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -566,6 +591,8 @@ fill:  #FFFFFF;
   border-top: none;
 }
 .portfolio-btn {
+  transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -598,6 +625,8 @@ fill:  #FFFFFF;
   text-decoration: none;
 }
 .portfolio-card {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   display: block;
   text-decoration: none;
 }
